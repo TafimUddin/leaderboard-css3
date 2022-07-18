@@ -3,11 +3,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
  
 /* common styles */
-
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Poppins', sans-serif;
     background-color:  #F3F1FF;
 }
+/* Nav bar css */
+.main-nav{
+    display: flex;
+    align-items: center;
+    background-color: #562EFF;
+    justify-content:space-around;
+    height: 70px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 41px;
+    height: 51px;
+}
+.logo h2{
+    color: #fff;
+    padding-left: 10px;
+}
+.topnav {
+    overflow: hidden;
+  }
+  .profile{
+    width: 51px;
+    height: 51px;
+    padding-top: 5px;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    color: black;
+  }
+  .topnav .icon {
+    display: none;
+  }
+
+  
+
+
 main{
     display: flex;
     flex-direction: column;
@@ -46,6 +98,7 @@ hr{
 .player img{
     width: 56px;
     height: 56px;
+    border-radius: 50%;
 }
 .player-name{
     margin-left: 16px;
@@ -66,6 +119,7 @@ hr{
     height: 177px;
     margin-top: 20px;
 }
+
 .blog-info{
     margin-left: 16px;
 }
@@ -87,6 +141,7 @@ hr{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 24px;
+    grid-row-gap: 24px;
   
     
 }
@@ -98,6 +153,7 @@ hr{
 .course .course-banner img{
     width: 224px;
     height: 104px;
+    border-radius: 10px;
 }
 .course-info{
     display: flex;
@@ -119,7 +175,52 @@ hr{
     font-size: 14.6913px;
     color: #ED6B4F;
 }
+ /* footer */
+ footer{
+    background-color: #562EFF;
+    height: 120px;
+    text-align: center;
+    padding-top: 15px;
+    color: #fff;
+ }
+footer h3{
+    color: #ED6B4F;
+    font-size: 34px;
+}
+footer h3::first-letter{
+    font-size: 54px;
+    color: #fff;
+}
+
 /* media query */
+/*  Nav  */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+
+
+
+
+
 @media only screen and (max-width: 688px) {
     .container{
         width: 100%;
