@@ -118,10 +118,12 @@ hr{
     width: 177px;
     height: 177px;
     margin-top: 20px;
+    border-radius: 10px;
 }
 
 .blog-info{
     margin-left: 16px;
+    margin-top: 20px;
 }
 .blog-title{
     font-size: 20px;
