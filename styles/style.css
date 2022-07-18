@@ -176,18 +176,18 @@ hr{
     color: #ED6B4F;
 }
  /* footer */
- footer{
+ .footer{
     background-color: #562EFF;
     height: 120px;
     text-align: center;
     padding-top: 15px;
     color: #fff;
  }
-footer h3{
+.footer h3{
     color: #ED6B4F;
     font-size: 34px;
 }
-footer h3::first-letter{
+.footer h3::first-letter{
     font-size: 54px;
     color: #fff;
 }
